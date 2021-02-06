@@ -17,7 +17,8 @@
         android:textSize="40sp"
         android:background="@drawable/button_circle"
         app:layout_constraintBottom_toTopOf="@+id/division"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="multiply"/>
 
     <Button
         android:id="@+id/division"
@@ -29,7 +30,8 @@
         android:textSize="40sp"
         android:background="@drawable/button_circle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="divide"/>
 
     <Button
         android:id="@+id/minus"
@@ -41,7 +43,8 @@
         android:textSize="40sp"
         android:background="@drawable/button_circle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="subtract"/>
 
     <Button
         android:id="@+id/addition"
@@ -50,6 +53,7 @@
         android:layout_marginEnd="88dp"
         android:layout_marginBottom="24dp"
         android:text="@string/plus"
+        android:onClick="add"
         android:textSize="40sp"
         android:background="@drawable/button_circle"
         app:layout_constraintBottom_toTopOf="@+id/minus"
@@ -85,18 +89,18 @@
         android:autofillHints="number"
         tools:ignore="LabelFor" />
 
-    <Button
-        android:id="@+id/resultBTN"
-        android:onClick="setResult"
-        android:layout_width="140dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="104dp"
-        android:text="@string/equal"
-        android:textSize="40sp"
-        android:background="@drawable/button_circle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+<!--    <Button-->
+<!--        android:id="@+id/resultBTN"-->
+<!--        android:onClick="setResult"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="75dp"-->
+<!--        android:layout_marginBottom="104dp"-->
+<!--        android:text="@string/equal"-->
+<!--        android:textSize="40sp"-->
+<!--        android:background="@drawable/button_circle"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
